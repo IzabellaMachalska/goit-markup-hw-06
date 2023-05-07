@@ -429,6 +429,49 @@ body {
   height: 44px;
   border-radius: 50%;
 }
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 77px;
+}
+.footer-user-email {
+width: 358px;
+height: 50px;
+background-color: var(--background-box-primary);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+color: var(--text-color-light);
+}
+input::-webkit-input-placeholder {
+  display: flex;
+  justify-content: center;
+  padding-left: 16px;
+}
+.button-user-email{
+width: 200px;
+height: 50px;
+line-height: 0.53;
+letter-spacing: 0.06em;
+background-color: var(--background-button);
+border-radius: 4px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+gap:24px;
+border: none;
+fill: var(--icon-color-light);
+color: var(--text-color-light);
+}
+.test-input {
+  display: inline-flex;
+  gap:12px;
+}
+/* .footer-user-email:hover,
+.footer-user-email:focus {
+  border: 1px solid var(--border-icon-blue);
+border-radius: 4px;
+} */
 /* KARTA POTFOLIO */
 .primary-portfolio-list {
   display: flex;
