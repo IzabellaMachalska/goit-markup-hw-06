@@ -10,7 +10,7 @@
   --background-whatwedo-items: rgba(47, 48, 58, 0.8);
   --background-list-main-por: rgba(33, 150, 243, 0.9);
   --background-modal: rgba(0, 0, 0, 0.2);
-  --text-color-primary: #212121;
+    --text-color-primary: #212121;
   --text-color-secondary: #757575;
   --text-color-blue: #2196f3;
   --text-color-light: #ffffff;
@@ -19,6 +19,7 @@
   --border-bottom-color-main-por: #eeeeee;
   --border-icon-blue: #2196f3;
   --border-icon: #afb1b8;
+  --border-checkbox: #212121;
   --icon-color: #afb1b8;
   --icon-color-blue: #2196f3;
   --icon-contanct-color: #757575;
@@ -27,6 +28,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 ul {
   list-style: none;
@@ -435,37 +437,37 @@ body {
   margin-left: 77px;
 }
 .footer-user-email {
-width: 358px;
-height: 50px;
-background-color: var(--background-box-primary);
-border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 4px;
-color: var(--text-color-light);
+  width: 358px;
+  height: 50px;
+  background-color: var(--background-box-primary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--text-color-light);
 }
 input::-webkit-input-placeholder {
   display: flex;
   justify-content: center;
   padding-left: 16px;
 }
-.button-user-email{
-width: 200px;
-height: 50px;
-line-height: 0.53;
-letter-spacing: 0.06em;
-background-color: var(--background-button);
-border-radius: 4px;
-display: flex;
-align-items: center;
-text-align: center;
-justify-content: center;
-gap:24px;
-border: none;
-fill: var(--icon-color-light);
-color: var(--text-color-light);
+.button-user-email {
+  width: 200px;
+  height: 50px;
+  line-height: 0.53;
+  letter-spacing: 0.06em;
+  background-color: var(--background-button);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 24px;
+  border: none;
+  fill: var(--icon-color-light);
+  color: var(--text-color-light);
 }
 .test-input {
   display: inline-flex;
-  gap:12px;
+  gap: 12px;
 }
 /* .footer-user-email:hover,
 .footer-user-email:focus {
@@ -553,4 +555,72 @@ border-radius: 4px;
 .list-main-por:focus .overlay-main-por {
   transform: translateY(0);
 }
-/* TESTY LINKI NAVI */
+/* MODAL */
+.order-form {
+  display: inline-block;
+  /* display: block;
+  flex-direction: column; */
+}
+.headline-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.label-order-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* color: var(--text-color-secondary);
+  font-size: 12px; */
+ }
+.input-order-form {
+ width: 448px;
+height: 40px;
+position: absolute;
+margin-bottom: 10px;
+border-radius: 4px;
+/* display: inline-flex; */
+padding: 13px;
+align-items: center;
+margin-left: 40px;
+position: relative;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.button-post {
+  width: 200px;
+  height: 50px;
+  line-height: 0.53;
+  letter-spacing: 0.06em;
+  background-color: var(--background-button);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  margin-top: 30px;
+  fill: var(--icon-color-light);
+  color: var(--text-color-light);
+}
+.modal span {
+  margin-bottom: 4px;
+  color: var(--text-color-secondary);
+  font-size: 12px;
+}
+.label-contract-form span {
+  color: var(--text-color-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  
+}
+.label-contract-form a {
+  color: var(--text-color-blue);
+  text-decoration:underline;
+}
