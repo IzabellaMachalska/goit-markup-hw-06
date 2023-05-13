@@ -557,7 +557,7 @@ border-radius: 4px;
 }
 /* MODAL */
 .order-form {
-  display: inline-block;
+  padding: 40px;
   /* display: block;
   flex-direction: column; */
 }
@@ -567,8 +567,7 @@ border-radius: 4px;
   line-height: 0.86;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 .label-order-form {
   position: relative;
@@ -578,16 +577,12 @@ border-radius: 4px;
   font-size: 12px; */
  }
 .input-order-form {
- width: 448px;
 height: 40px;
-position: absolute;
-margin-bottom: 10px;
+position: relative;
 border-radius: 4px;
 /* display: inline-flex; */
 padding: 13px;
 align-items: center;
-margin-left: 40px;
-position: relative;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
@@ -623,4 +618,19 @@ border-radius: 4px;
 .label-contract-form a {
   color: var(--text-color-blue);
   text-decoration:underline;
+}
+.testikona {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+ 
+  margin-bottom: 11px;
+  /* wymiar svg 18, 40/2 - 18/2 */
+  margin-left: 15px;
+}
+.label-order-form textarea {
+width: 448px;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 }
