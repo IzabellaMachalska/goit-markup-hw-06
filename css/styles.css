@@ -558,8 +558,6 @@ border-radius: 4px;
 /* MODAL */
 .order-form {
   padding: 40px;
-  /* display: block;
-  flex-direction: column; */
 }
 .headline-modal {
   font-weight: 700;
@@ -573,18 +571,17 @@ border-radius: 4px;
   position: relative;
   display: flex;
   flex-direction: column;
-  /* color: var(--text-color-secondary);
-  font-size: 12px; */
  }
 .input-order-form {
 height: 40px;
 position: relative;
 border-radius: 4px;
-/* display: inline-flex; */
 padding: 13px;
 align-items: center;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 42px; 
+/* kursor za ikoną */
 }
 
 .button-post {
@@ -598,13 +595,16 @@ border-radius: 4px;
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin: 30px auto 0 auto;
   border: none;
-  margin-top: 30px;
+  align-content: center;
   fill: var(--icon-color-light);
   color: var(--text-color-light);
+  
 }
 .modal span {
   margin-bottom: 4px;
+  margin-top: 12px;
   color: var(--text-color-secondary);
   font-size: 12px;
 }
@@ -618,16 +618,41 @@ border-radius: 4px;
 .label-contract-form a {
   color: var(--text-color-blue);
   text-decoration:underline;
+ }
+ .label-contract-form input {
+  /* ukrycie automatycznego checkboxa */
+  position: absolute;
+  opacity: 0;
+  cursor: none;
+  height: 0;
+  width: 0;
 }
 .testikona {
   position: absolute;
   left: 0;
   bottom: 0;
- 
   margin-bottom: 11px;
-  /* wymiar svg 18, 40/2 - 18/2 */
   margin-left: 15px;
+} 
+.label-order-form input:hover,
+.label-order-form input:focus,
+.label-order-form input:hover + svg,
+.label-order-form input:focus + svg {
+  border-color: var(--border-icon-blue);
+  fill: var(--background-button);
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.new-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--font-color);
+  border-radius: 3px;
+}
+
+
 .label-order-form textarea {
 width: 448px;
 height: 120px;
